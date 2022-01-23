@@ -26,11 +26,11 @@ After, trying different hyperparameter tuning, i realized that model will perfor
 2. Increase time limit for training model
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
-|model|time|problem_type|presets|score|
+|model|hpo1|hpo2|hpo3|score|
 |--|--|--|--|--|
-|initial|600|default|best_quality|1.39447|
-|add_features|600|regression|best_quality|0.51512|
-|hpo|600|regression|best_quality|0.48430|
+|initial|default|default|default|1.39447|
+|add_features|default|default|default|0.51512|
+|hpo|NN epoch:[100], activation:['relu','softrelu','tanh'], learning_rate:[0.0001, 0.1], layers:[[100], [1000], [200, 100], [300, 200, 100]], dropout:[0.0, 0.5]|GBM num_boost_round:[100], num_leaves[20,85]|default|0.48430|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
